@@ -48,6 +48,7 @@ public class DefaultDocumentLoader implements DocumentLoader {
 
 	/**
 	 * JAXP attribute used to configure the schema language for validation.
+	 * Java API for XMLProcessing,为XML处理的Java API
 	 */
 	private static final String SCHEMA_LANGUAGE_ATTRIBUTE = "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
 
