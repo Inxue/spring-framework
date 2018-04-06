@@ -23,10 +23,11 @@ import org.xml.sax.InputSource;
 
 /**
  * Strategy interface for loading an XML {@link Document}.
- *
+ *接口用来加载XML的Spring配置文档
  * @author Rob Harrop
  * @since 2.0
  * @see DefaultDocumentLoader
+ * 有一个默认的Loader实现
  */
 public interface DocumentLoader {
 
@@ -42,6 +43,7 @@ public interface DocumentLoader {
 	 * @return the loaded {@link Document document}
 	 * @throws Exception if an error occurs
 	 */
+	//Document与Node均为w3c包中接口，spring依赖这个包
 	Document loadDocument(
 			InputSource inputSource, EntityResolver entityResolver,
 			ErrorHandler errorHandler, int validationMode, boolean namespaceAware)

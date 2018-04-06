@@ -84,6 +84,7 @@ public class DefaultDocumentLoader implements DocumentLoader {
 	 * @param namespaceAware whether the returned factory is to provide support for XML namespaces
 	 * @return the JAXP DocumentBuilderFactory
 	 * @throws ParserConfigurationException if we failed to build a proper DocumentBuilderFactory
+	 * 1参数为表示什么样的验证模式,2返回的factory是否提供对xml命名空间的支持
 	 */
 	protected DocumentBuilderFactory createDocumentBuilderFactory(int validationMode, boolean namespaceAware)
 			throws ParserConfigurationException {
